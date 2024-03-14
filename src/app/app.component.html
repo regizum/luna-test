@@ -1,0 +1,4 @@
+<label>LiveSearch</label>
+<div><input type="text" liveSearch [throttle]="500" (inputEvent)="onInput($event)"/></div>
+<div>Result: <span>{{ throttledString }}</span></div>
+
